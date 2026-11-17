@@ -9,20 +9,101 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main>
+  <!-- TEMPLATE: placeholder text only. Esteban approves the policy before this replaces «Próximamente» on main. -->
+  <main class="doc">
     <a class="back" href="/">← PlanTrace</a>
-    <h1>Política de privacidad</h1>
-    <p class="lead">Próximamente.<br><span class="en" lang="en">Privacy policy: coming soon.</span></p>
-    <div class="card">
-      <p>Si tienes preguntas sobre tus datos en PlanTrace, escríbenos a <a href="mailto:privacy@getplantrace.com">privacy@getplantrace.com</a>.</p>
-      <p class="en" lang="en">Questions about your data in PlanTrace: <a href="mailto:privacy@getplantrace.com">privacy@getplantrace.com</a>.</p>
-    </div>
+
+    <p class="draft" role="note">Plantilla con texto de relleno. No es la política de PlanTrace.</p>
+
+    <header class="doc-head">
+      <h1>Política de privacidad</h1>
+      <p class="doc-meta">
+        Última actualización: <time datetime="2026-01-01">[fecha]</time><br>
+        Vigente desde: <time datetime="2026-01-01">[fecha]</time>
+      </p>
+      <p class="doc-lang"><span class="en" lang="en">[English version: link or note]</span></p>
+    </header>
+
+    <p class="lead-doc">[Resumen en uno o dos párrafos: quién es responsable de los datos, a quién aplica esta política y qué la cambia. Texto de relleno que ocupa más o menos lo que ocupará el texto aprobado.]</p>
+
+    <nav class="toc" aria-label="Contenido">
+      <h2>Contenido</h2>
+      <ol>
+        <li><a href="#s1">[Título de la sección 1]</a></li>
+        <li><a href="#s2">[Título de la sección 2]</a></li>
+        <li><a href="#s3">[Título de la sección 3]</a></li>
+        <li><a href="#s4">[Título de la sección 4]</a></li>
+        <li><a href="#s5">[Título de la sección 5]</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ol>
+    </nav>
+
+    <section id="s1">
+      <h2><span class="num">1.</span> [Título de la sección 1]</h2>
+      <p>[Párrafo de relleno. Aquí va el texto aprobado de esta sección, con la extensión de un párrafo normal de una política: tres o cuatro líneas en un iPhone y dos en una pantalla ancha.]</p>
+      <p>[Segundo párrafo de relleno, para ver el espacio entre párrafos.]</p>
+    </section>
+
+    <section id="s2">
+      <h2><span class="num">2.</span> [Título de la sección 2]</h2>
+      <p>[Párrafo de relleno que introduce una lista.]</p>
+      <ul>
+        <li><strong>[Elemento]:</strong> [descripción de relleno].</li>
+        <li><strong>[Elemento]:</strong> [descripción de relleno, algo más larga para ver cómo corre a una segunda línea en un iPhone].</li>
+        <li><strong>[Elemento]:</strong> [descripción de relleno].</li>
+      </ul>
+      <h3>[Subtítulo 2.1]</h3>
+      <p>[Párrafo de relleno bajo un subtítulo.]</p>
+    </section>
+
+    <section id="s3">
+      <h2><span class="num">3.</span> [Título de la sección 3]</h2>
+      <p>[Párrafo de relleno que introduce una tabla, por ejemplo de tipos de datos y para qué se usan.]</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">[Columna A]</th><th scope="col">[Columna B]</th><th scope="col">[Columna C]</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>[Dato]</td><td>[Uso de relleno]</td><td>[Plazo]</td></tr>
+            <tr><td>[Dato]</td><td>[Uso de relleno, más largo, para ver el ajuste de línea en la celda]</td><td>[Plazo]</td></tr>
+            <tr><td>[Dato]</td><td>[Uso de relleno]</td><td>[Plazo]</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="s4">
+      <h2><span class="num">4.</span> [Título de la sección 4]</h2>
+      <p>[Párrafo de relleno.]</p>
+      <ol>
+        <li>[Paso o derecho de relleno.]</li>
+        <li>[Paso o derecho de relleno.]</li>
+      </ol>
+    </section>
+
+    <section id="s5">
+      <h2><span class="num">5.</span> [Título de la sección 5]</h2>
+      <p>[Párrafo de relleno sobre cambios a esta política y cómo se avisan.]</p>
+    </section>
+
+    <section id="contacto" class="card contact">
+      <h2>Contacto</h2>
+      <p>[Frase de relleno que invita a escribir.] <a href="mailto:privacy@getplantrace.com">privacy@getplantrace.com</a></p>
+      <p class="en" lang="en">[English line.] <a href="mailto:privacy@getplantrace.com">privacy@getplantrace.com</a></p>
+    </section>
   </main>
   <footer>
     <div>
-      <span>© 2026 PlanTrace</span>
-      <a href="/privacy/">Privacidad · Privacy</a>
-      <a href="/terms/">Términos · Terms</a>
+      <p class="foot-row">
+        <a href="/privacy/" aria-current="page">Privacidad · Privacy</a>
+        <a href="/terms/">Términos · Terms</a>
+      </p>
+      <p class="foot-row">
+        <a href="mailto:privacy@getplantrace.com">privacy@getplantrace.com</a>
+        <span>Actualizada: <time datetime="2026-01-01">[fecha]</time></span>
+      </p>
+      <p class="foot-row"><span>© 2026 PlanTrace</span></p>
     </div>
   </footer>
 </body>
