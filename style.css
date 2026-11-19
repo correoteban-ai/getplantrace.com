@@ -108,3 +108,102 @@ footer div {
 }
 
 footer a { color: var(--muted); }
+footer a[aria-current="page"] { color: var(--text); text-decoration: none; }
+
+/* Legal documents: /privacy/ and /terms/. */
+.doc { padding-top: 40px; }
+
+.doc .back { margin-bottom: 24px; }
+
+.draft {
+  margin: 0 0 24px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px dashed var(--muted);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.doc-head { margin: 32px 0 24px; }
+.doc-head h1 { font-size: clamp(1.75rem, 7.5vw, 2.25rem); margin-bottom: 12px; }
+
+.doc-meta,
+.doc-lang {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.doc-lang { margin-top: 4px; }
+
+.lead-doc { font-size: 1.1rem; margin: 0 0 8px; }
+
+.toc {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 24px 0 8px;
+  padding: 4px 0 16px;
+}
+
+.toc h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 16px 0 8px;
+}
+
+.toc ol { margin: 0; padding-left: 1.4em; }
+.toc li + li { margin-top: 4px; }
+
+.doc section { scroll-margin-top: 16px; }
+
+.doc h2 .num { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+h3 { font-size: 1.05rem; margin: 24px 0 6px; }
+
+.doc p { margin: 0 0 12px; }
+.doc ul,
+.doc ol { padding-left: 1.4em; margin: 0 0 12px; }
+.doc li + li { margin-top: 6px; }
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+th { background: var(--surface); font-weight: 600; }
+tbody tr:last-child td { border-bottom: 0; }
+
+.contact { margin-top: 40px; }
+.contact h2 { margin-top: 0; }
+.doc .contact p:last-child { margin-bottom: 0; }
+
+.foot-row {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+}
+
+@media print {
+  .back, .draft, .toc, footer { display: none; }
+  body { background: #fff; color: #000; }
+  a { color: inherit; }
+}
