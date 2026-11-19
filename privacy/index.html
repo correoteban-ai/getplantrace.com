@@ -62,15 +62,15 @@
             <tr><th scope="col">Tipo</th><th scope="col">Qué incluye</th><th scope="col">De dónde viene</th></tr>
           </thead>
           <tbody>
-            <tr><td>Cuenta</td><td>Nombre, correo, y si entras con Apple, el correo que Apple te asigne si eliges ocultarlo</td><td>De ti, o de Apple al iniciar sesión</td></tr>
-            <tr><td>Perfil</td><td>Título profesional, empresa, color y emoji del avatar, e idioma de la app</td><td>De ti, y es opcional salvo el nombre</td></tr>
-            <tr><td>Participación en un proyecto</td><td>La Parte que representas, tu rol, tus disciplinas</td><td>De ti o de quien te invita</td></tr>
-            <tr><td>Contenido del proyecto</td><td>Planos en PDF, incidencias, descripciones, notas, fotos con sus puntos, fechas, autor de cada pieza e historial de cambios</td><td>De quienes trabajan en el proyecto</td></tr>
-            <tr><td>Fotos</td><td>La imagen y su orientación. Al tomarla, la app borra los metadatos del archivo: ubicación GPS, modelo del teléfono y demás</td><td>De la cámara de tu teléfono</td></tr>
-            <tr><td>Dictado</td><td>El texto transcrito. La transcripción ocurre en tu teléfono; el audio no sale de él y no se guarda</td><td>De tu voz, cuando dictas</td></tr>
-            <tr><td>Datos técnicos</td><td>Una verificación del dispositivo (App Attest de Apple) que prueba que la solicitud viene de la app real y no contiene datos personales, y la versión de la app y del sistema. No usamos herramientas de analítica, de reporte de fallos ni de publicidad</td><td>De tu teléfono</td></tr>
-            <tr><td>Diagnóstico de soporte</td><td>Solo en las versiones de prueba: si tocas «Copiar diagnóstico», la app copia a tu portapapeles un texto con identificadores, versiones y errores recientes, sin nombres, correos, textos, fotos ni ubicación. Sale de tu teléfono solo si tú lo pegas en un mensaje</td><td>De tu teléfono, cuando tú lo copias</td></tr>
-            <tr><td>Pagos</td><td>Si tienes un plan de pago: el plan y su estado. El pago lo procesa Apple; no recibimos datos de tu tarjeta</td><td>De Apple</td></tr>
+            <tr><td data-label="Tipo">Cuenta</td><td data-label="Qué incluye">Nombre, correo, y si entras con Apple, el correo que Apple te asigne si eliges ocultarlo</td><td data-label="De dónde viene">De ti, o de Apple al iniciar sesión</td></tr>
+            <tr><td data-label="Tipo">Perfil</td><td data-label="Qué incluye">Título profesional, empresa, color y emoji del avatar, e idioma de la app</td><td data-label="De dónde viene">De ti, y es opcional salvo el nombre</td></tr>
+            <tr><td data-label="Tipo">Participación en un proyecto</td><td data-label="Qué incluye">La Parte que representas, tu rol, tus disciplinas</td><td data-label="De dónde viene">De ti o de quien te invita</td></tr>
+            <tr><td data-label="Tipo">Contenido del proyecto</td><td data-label="Qué incluye">Planos en PDF, incidencias, descripciones, notas, fotos con sus puntos, fechas, autor de cada pieza e historial de cambios</td><td data-label="De dónde viene">De quienes trabajan en el proyecto</td></tr>
+            <tr><td data-label="Tipo">Fotos</td><td data-label="Qué incluye">La imagen y su orientación. Al tomarla, la app borra los metadatos del archivo: ubicación GPS, modelo del teléfono y demás</td><td data-label="De dónde viene">De la cámara de tu teléfono</td></tr>
+            <tr><td data-label="Tipo">Dictado</td><td data-label="Qué incluye">El texto transcrito. La transcripción ocurre en tu teléfono; el audio no sale de él y no se guarda</td><td data-label="De dónde viene">De tu voz, cuando dictas</td></tr>
+            <tr><td data-label="Tipo">Datos técnicos</td><td data-label="Qué incluye">Una verificación del dispositivo (App Attest de Apple) que prueba que la solicitud viene de la app real y no contiene datos personales, y la versión de la app y del sistema. No usamos herramientas de analítica, de reporte de fallos ni de publicidad</td><td data-label="De dónde viene">De tu teléfono</td></tr>
+            <tr><td data-label="Tipo">Diagnóstico de soporte</td><td data-label="Qué incluye">Solo en las versiones de prueba: si tocas «Copiar diagnóstico», la app copia a tu portapapeles un texto con identificadores, versiones y errores recientes, sin nombres, correos, textos, fotos ni ubicación. Sale de tu teléfono solo si tú lo pegas en un mensaje</td><td data-label="De dónde viene">De tu teléfono, cuando tú lo copias</td></tr>
+            <tr><td data-label="Tipo">Pagos</td><td data-label="Qué incluye">Si tienes un plan de pago: el plan y su estado. El pago lo procesa Apple; no recibimos datos de tu tarjeta</td><td data-label="De dónde viene">De Apple</td></tr>
           </tbody>
         </table>
       </div>
@@ -120,16 +120,16 @@
             <tr><th scope="col">Situación</th><th scope="col">Qué pasa con los datos</th></tr>
           </thead>
           <tbody>
-            <tr><td>Mientras usas PlanTrace</td><td>Conservamos tu cuenta y el contenido de tus proyectos.</td></tr>
-            <tr><td>Eliminas tu cuenta</td><td>Puedes hacerlo desde la app, sin pasos adicionales. Borramos tu nombre, correo, foto y perfil, y los proyectos donde eras el único miembro. Lo borrado puede seguir hasta 30 días en las copias de respaldo y en los registros técnicos del servidor, que solo guardan identificadores; después desaparece.</td></tr>
-            <tr><td>Lo que registraste en un proyecto compartido</td><td>Sigue en ese proyecto como parte de su registro, sin tu nombre: aparece como "Exmiembro". Nadie puede modificarlo. Cada pieza conserva un identificador interno de su autor, que no contiene tu nombre ni tu correo, para que el registro siga siendo coherente.</td></tr>
-            <tr><td>Eras el administrador de un proyecto con otros miembros</td><td>El proyecto queda en solo lectura y no se borra mientras tenga otros miembros. Cualquier miembro puede generar su informe completo o asumir la administración en cualquier momento.</td></tr>
-            <tr><td>Concluyes tu participación en un proyecto</td><td>Sigues siendo miembro, con tu nombre, y conservas la lectura del proyecto y sus informes. Lo que registraste se conserva y nadie puede modificarlo.</td></tr>
-            <tr><td>Quien administra concluye el proyecto</td><td>Todo el proyecto queda en solo lectura, y sus miembros conservan el acceso y los informes. Se conserva como registro técnico de la obra; no se guarda en tu teléfono y se descarga al abrirlo.</td></tr>
-            <tr><td>Sales de un proyecto</td><td>Lo que registraste se queda en el proyecto y nadie puede modificarlo. Aparece con tu nombre y la marca de exmiembro, por ejemplo "Ana Ulloa (exmiembro)", porque es parte del registro técnico de la obra.</td></tr>
-            <tr><td>Cuenta gratuita inactiva</td><td>Tras 12 meses sin actividad te avisamos por correo; si no respondes, borramos los archivos de los proyectos donde eres el único miembro. Los proyectos compartidos no se tocan.</td></tr>
-            <tr><td>Quien administra quiere borrar un proyecto</td><td>Solo se puede borrar un proyecto sin otros miembros. Uno con otros miembros puede cerrarse en solo lectura, pero no borrarse, porque es el registro de todos.</td></tr>
-            <tr><td>Una ley nos exige conservar algo</td><td>Lo conservamos solo el tiempo que esa ley indique, y te lo decimos.</td></tr>
+            <tr><td data-label="Situación">Mientras usas PlanTrace</td><td data-label="Qué pasa con los datos">Conservamos tu cuenta y el contenido de tus proyectos.</td></tr>
+            <tr><td data-label="Situación">Eliminas tu cuenta</td><td data-label="Qué pasa con los datos">Puedes hacerlo desde la app, sin pasos adicionales. Borramos tu nombre, correo, foto y perfil, y los proyectos donde eras el único miembro. Lo borrado puede seguir hasta 30 días en las copias de respaldo y en los registros técnicos del servidor, que solo guardan identificadores; después desaparece.</td></tr>
+            <tr><td data-label="Situación">Lo que registraste en un proyecto compartido</td><td data-label="Qué pasa con los datos">Sigue en ese proyecto como parte de su registro, sin tu nombre: aparece como "Exmiembro". Nadie puede modificarlo. Cada pieza conserva un identificador interno de su autor, que no contiene tu nombre ni tu correo, para que el registro siga siendo coherente.</td></tr>
+            <tr><td data-label="Situación">Eras el administrador de un proyecto con otros miembros</td><td data-label="Qué pasa con los datos">El proyecto queda en solo lectura y no se borra mientras tenga otros miembros. Cualquier miembro puede generar su informe completo o asumir la administración en cualquier momento.</td></tr>
+            <tr><td data-label="Situación">Concluyes tu participación en un proyecto</td><td data-label="Qué pasa con los datos">Sigues siendo miembro, con tu nombre, y conservas la lectura del proyecto y sus informes. Lo que registraste se conserva y nadie puede modificarlo.</td></tr>
+            <tr><td data-label="Situación">Quien administra concluye el proyecto</td><td data-label="Qué pasa con los datos">Todo el proyecto queda en solo lectura, y sus miembros conservan el acceso y los informes. Se conserva como registro técnico de la obra; no se guarda en tu teléfono y se descarga al abrirlo.</td></tr>
+            <tr><td data-label="Situación">Sales de un proyecto</td><td data-label="Qué pasa con los datos">Lo que registraste se queda en el proyecto y nadie puede modificarlo. Aparece con tu nombre y la marca de exmiembro, por ejemplo "Ana Ulloa (exmiembro)", porque es parte del registro técnico de la obra.</td></tr>
+            <tr><td data-label="Situación">Cuenta gratuita inactiva</td><td data-label="Qué pasa con los datos">Tras 12 meses sin actividad te avisamos por correo; si no respondes, borramos los archivos de los proyectos donde eres el único miembro. Los proyectos compartidos no se tocan.</td></tr>
+            <tr><td data-label="Situación">Quien administra quiere borrar un proyecto</td><td data-label="Qué pasa con los datos">Solo se puede borrar un proyecto sin otros miembros. Uno con otros miembros puede cerrarse en solo lectura, pero no borrarse, porque es el registro de todos.</td></tr>
+            <tr><td data-label="Situación">Una ley nos exige conservar algo</td><td data-label="Qué pasa con los datos">Lo conservamos solo el tiempo que esa ley indique, y te lo decimos.</td></tr>
           </tbody>
         </table>
       </div>
@@ -174,9 +174,9 @@
             <tr><th scope="col">Proveedor</th><th scope="col">Para qué</th><th scope="col">Qué datos</th><th scope="col">Dónde</th></tr>
           </thead>
           <tbody>
-            <tr><td>Google (Firebase y Google Cloud)</td><td>Base de datos, almacenamiento de planos y fotos, autenticación, protección contra el uso indebido</td><td>Todos los de la cuenta y los proyectos</td><td>us-east1 (Virginia, Estados Unidos)</td></tr>
-            <tr><td>Apple</td><td>Inicio de sesión con Apple, cobro de los planes de pago</td><td>Nombre y correo (si entras con Apple), estado de la suscripción</td><td>Según Apple</td></tr>
-            <tr><td>Anthropic (modelo Claude, por su API comercial)</td><td>Leer el cajetín de cada plano</td><td>Cada página de los planos que subes y el título del plano, sin tu nombre ni los datos de tu cuenta. Anthropic conserva lo recibido hasta 30 días (más tiempo solo si sus sistemas de seguridad lo marcan por un posible mal uso) y no lo usa para entrenar sus modelos</td><td>Estados Unidos</td></tr>
+            <tr><td data-label="Proveedor">Google (Firebase y Google Cloud)</td><td data-label="Para qué">Base de datos, almacenamiento de planos y fotos, autenticación, protección contra el uso indebido</td><td data-label="Qué datos">Todos los de la cuenta y los proyectos</td><td data-label="Dónde">us-east1 (Virginia, Estados Unidos)</td></tr>
+            <tr><td data-label="Proveedor">Apple</td><td data-label="Para qué">Inicio de sesión con Apple, cobro de los planes de pago</td><td data-label="Qué datos">Nombre y correo (si entras con Apple), estado de la suscripción</td><td data-label="Dónde">Según Apple</td></tr>
+            <tr><td data-label="Proveedor">Anthropic (modelo Claude, por su API comercial)</td><td data-label="Para qué">Leer el cajetín de cada plano</td><td data-label="Qué datos">Cada página de los planos que subes y el título del plano, sin tu nombre ni los datos de tu cuenta. Anthropic conserva lo recibido hasta 30 días (más tiempo solo si sus sistemas de seguridad lo marcan por un posible mal uso) y no lo usa para entrenar sus modelos</td><td data-label="Dónde">Estados Unidos</td></tr>
           </tbody>
         </table>
       </div>
