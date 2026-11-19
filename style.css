@@ -190,6 +190,43 @@ th, td {
 th { background: var(--surface); font-weight: 600; }
 tbody tr:last-child td { border-bottom: 0; }
 
+/* On a phone, each table row becomes a card with its column names, so no column hides off-screen. */
+@media (max-width: 600px) {
+  .table-wrap { overflow: visible; border: 0; border-radius: 0; }
+  .table-wrap table,
+  .table-wrap tbody,
+  .table-wrap tr,
+  .table-wrap td { display: block; width: 100%; }
+  .table-wrap thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .table-wrap tr {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 0 0 10px;
+  }
+  .table-wrap td { border: 0; padding: 0; }
+  .table-wrap td + td { margin-top: 10px; }
+  .table-wrap td:first-child { font-weight: 600; }
+  .table-wrap td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
 .contact { margin-top: 40px; }
 .contact h2 { margin-top: 0; }
 .doc .contact p:last-child { margin-bottom: 0; }
